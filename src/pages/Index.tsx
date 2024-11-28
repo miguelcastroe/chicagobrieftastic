@@ -22,8 +22,8 @@ const styles: Style[] = [
       "Porque las mejores historias necesitan espacio",
       "Como tu lista de conquistas: largo y memorable",
     ],
-    color: "bg-primary",
-    icon: <div className="w-20 h-8 bg-primary rounded-full animate-float" />,
+    color: "bg-card",
+    icon: <div className="w-20 h-8 bg-text-white rounded-full animate-float" />,
   },
   {
     id: "grande-luxe",
@@ -34,11 +34,11 @@ const styles: Style[] = [
       "Espacio de lujo para tus grandes ambiciones",
       "Cuando necesitas ese extra de confianza",
     ],
-    color: "bg-secondary",
+    color: "bg-card",
     icon: (
       <div className="flex gap-2">
-        <div className="w-8 h-8 bg-secondary rounded-full animate-float" />
-        <div className="w-8 h-8 bg-secondary rounded-full animate-float" />
+        <div className="w-8 h-8 bg-text-white rounded-full animate-float" />
+        <div className="w-8 h-8 bg-text-white rounded-full animate-float" />
       </div>
     ),
   },
@@ -52,7 +52,7 @@ const styles: Style[] = [
       "Para los que guardan los mejores secretos",
     ],
     color: "bg-accent1",
-    icon: <div className="w-16 h-16 bg-accent1 rounded-full animate-blob" />,
+    icon: <div className="w-16 h-16 bg-text-white rounded-full animate-blob" />,
   },
   {
     id: "rocket-deluxe",
@@ -66,8 +66,8 @@ const styles: Style[] = [
     color: "bg-accent2",
     icon: (
       <div className="relative w-16 h-16">
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-8 h-12 bg-accent2 transform rotate-45 animate-rocket" />
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-4 bg-accent2 rounded-full animate-rocket" />
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-8 h-12 bg-text-white transform rotate-45 animate-rocket" />
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-4 bg-text-white rounded-full animate-rocket" />
       </div>
     ),
   },
