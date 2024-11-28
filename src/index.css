@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply bg-white text-secondary font-sans;
+    @apply bg-background text-text-light font-sans;
   }
 }
 

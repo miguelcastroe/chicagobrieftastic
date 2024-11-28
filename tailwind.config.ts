@@ -20,8 +20,13 @@ export default {
     extend: {
       colors: {
         // Main colors
-        primary: "#0988f0",    // Blue
-        secondary: "#202020",  // Dark Gray
+        background: "#202020",  // Dark background
+        card: "#0988f0",       // Blue for cards
+        // Text colors
+        "text-dark": "#202020",
+        "text-gray": "#9a9a9a",
+        "text-light": "#e9e9e9",
+        "text-white": "#ffffff",
         // Accent colors
         accent1: "#ff573b",    // Orange-red
         accent2: "#ffb800",    // Yellow
