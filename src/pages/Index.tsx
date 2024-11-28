@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Rocket, Share2, Home, ArrowRight } from "lucide-react";
+import { Share2, Home, ArrowRight } from "lucide-react";
 import { toast } from "sonner";
 
 type Style = {
@@ -64,7 +64,12 @@ const styles: Style[] = [
       "Para los que siempre apuntan alto",
     ],
     color: "bg-accent",
-    icon: <Rocket className="w-16 h-16 text-accent animate-rocket" />,
+    icon: (
+      <div className="relative w-16 h-16 animate-rocket">
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-8 h-12 bg-accent transform rotate-45" />
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-4 bg-accent rounded-full" />
+      </div>
+    ),
   },
 ];
 
