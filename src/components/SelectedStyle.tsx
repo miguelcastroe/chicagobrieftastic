@@ -11,15 +11,10 @@ export const SelectedStyle = ({
   style: Style; 
   onReset: () => void;
 }) => {
-  const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentPhraseIndex((prev) => (prev + 1) % style.phrases.length);
-    }, 5000); // Change every 5 seconds
-
-    return () => clearInterval(interval);
-  }, [style.phrases.length]);
+  // Initialize with a random phrase index
+  const [currentPhraseIndex, setCurrentPhraseIndex] = useState(() => 
+    Math.floor(Math.random() * style.phrases.length)
+  );
 
   const handleShare = () => {
     navigator.clipboard.writeText(
