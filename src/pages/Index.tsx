@@ -24,20 +24,28 @@ const Index = () => {
         {!selectedStyle ? (
           <>
             <motion.h1 
-              className="text-4xl md:text-5xl font-bold text-center mb-8 text-text-light"
+              className="text-4xl md:text-5xl font-bold mb-4 text-text-light text-left"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              ¿Cuál es tu estilo?
+              Chicago Brieftastic
             </motion.h1>
+            <motion.h2 
+              className="text-2xl md:text-3xl font-bold text-left mb-4 text-text-light"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+            >
+              ¿Cuál es tu tremendo estilo?
+            </motion.h2>
             <motion.p 
-              className="text-xl text-center text-text-gray mb-12"
+              className="text-xl text-left text-text-gray mb-12"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              Descubre el calzón que mejor se ajusta a ti y a tus necesidades
+              Descubre el calzoncillo que mejor se ajusta a tus medidas; perdón, a tus necesidades
             </motion.p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {styles.map((style, index) => (
