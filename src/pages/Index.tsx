@@ -16,11 +16,18 @@ const styles: Style[] = [
   {
     id: "largo-milano",
     name: "Largo Milano",
-    description: "Para quienes tienen historias largas de contar",
+    description: "Para quienes siempre tienen algo que contar y algo que mostrar. Espacio extra para historias largas y necesidades aún más largas.",
     phrases: [
-      "Tan largo como tus anécdotas de viernes por la noche",
-      "Porque las mejores historias necesitan espacio",
-      "Como tu lista de conquistas: largo y memorable",
+      "Porque cuando crece la historia también necesitas un poco más de espacio.",
+      "El ajuste perfecto para los narradores que nunca saben cuándo parar.",
+      "Diseñado para quienes siempre dejan a los demás con la boca abierta por sus cuentos, claro.",
+      "Ideal para quien necesita que todo esté en su sitio aunque nunca lo esté.",
+      "Largo Milano porque a veces las cosas no dejan de crecer.",
+      "Si tu creatividad necesita espacio imagina lo demás.",
+      "Diseñado para quienes saben que lo largo siempre llama la atención.",
+      "Porque mentir es un arte y este calzoncillo es la obra maestra.",
+      "Perfecto para esos días en que todo se siente más largo.",
+      "Cuando lo que tienes merece espacio, Largo Milano lo tiene todo."
     ],
     color: "bg-card",
     icon: <div className="mt-5 w-8 h-20 bg-text-white rounded-full animate-float transform rotate-90" />,
@@ -28,28 +35,42 @@ const styles: Style[] = [
   {
     id: "grande-luxe",
     name: "Grande Luxe",
-    description: "Para los que necesitan espacio porque siempre traen algo grande",
+    description: "Para los que necesitan espacio para todo lo que llevan. Un lujo para quienes saben que el tamaño sí importa.",
     phrases: [
-      "Porque lo bueno viene en paquetes grandes",
-      "Espacio de lujo para tus grandes ambiciones",
-      "Cuando necesitas ese extra de confianza",
+      "Grande Luxe porque aquí las cosas no se esconden, se destacan.",
+      "Diseñado para quienes saben que todo es mejor en tamaño XL.",
+      "Perfecto para quien siempre tiene más que ofrecer.",
+      "Porque el lujo no es solo una opción, es una necesidad.",
+      "Grande Luxe porque lo extraordinario necesita soporte premium.",
+      "Diseñado para grandes movimientos y grandes momentos.",
+      "El ajuste perfecto para quienes nunca viajan ligeros.",
+      "Ideal para los que siempre piensan en grande y no solo piensan.",
+      "Porque lo bueno se lleva pero lo grande se disfruta.",
+      "Cuando sabes que el espacio extra nunca está de más, Grande Luxe está contigo."
     ],
     color: "bg-card",
     icon: (
       <div className="mt-5 flex gap-2">
-        <div className="w-8 h-8 bg-text-white rounded-full animate-float hover:scale-110 transition-transform" />
-        <div className="w-8 h-8 bg-text-white rounded-full animate-float hover:scale-110 transition-transform" />
+        <div className="w-8 h-8 bg-text-white rounded-full animate-float" />
+        <div className="w-8 h-8 bg-text-white rounded-full animate-float" />
       </div>
     ),
   },
   {
     id: "silhouette-noir",
     name: "Silhouette Noir",
-    description: "Para los que buscan discreción máxima pero siempre sorprenden",
+    description: "Para los que no hacen ruido pero siempre dejan huella. Discreción elegante para quien sabe sorprender.",
     phrases: [
-      "Misterioso por fuera, sorprendente por dentro",
-      "La discreción nunca se vio tan bien",
-      "Para los que guardan los mejores secretos",
+      "El misterio que siempre lleva a algo más interesante.",
+      "Silhouette Noir discreción máxima, estilo absoluto.",
+      "Diseñado para quienes saben que lo bueno se esconde hasta que no puede más.",
+      "Ligero, cómodo y tan tentador como lo que llevas debajo.",
+      "Para los que prefieren moverse en silencio pero dejar huella.",
+      "Porque el misterio siempre atrae más de lo que imaginas.",
+      "Silhouette Noir el arte de lo sutil con un toque atrevido.",
+      "El calzoncillo que dice tranquilo pero poderoso.",
+      "Para quien prefiere lo discreto pero nunca lo aburrido.",
+      "Porque lo que no se muestra siempre intriga más."
     ],
     color: "bg-card",
     icon: <div className="mt-5 w-12 h-12 bg-text-white rounded-full animate-pulse-slow" />,
@@ -57,11 +78,18 @@ const styles: Style[] = [
   {
     id: "rocket-deluxe",
     name: "Rocket Deluxe",
-    description: "Siempre listos para despegar en 3... 2... 1",
+    description: "Para quienes siempre están listos para despegar y nunca fallan al aterrizar. Velocidad, estilo y energía, todo en uno.",
     phrases: [
-      "¡Preparado para el despegue!",
-      "Alcanza nuevas alturas con cada movimiento",
-      "Para los que siempre apuntan alto",
+      "Rocket Deluxe porque hay misiones que no pueden esperar.",
+      "Cuando necesitas estar listo en 3, 2, 1 este calzoncillo es para ti.",
+      "Diseñado para quienes no solo llegan rápido sino con estilo.",
+      "Perfecto para quienes siempre tienen combustible de sobra.",
+      "Porque aquí no hablamos de aterrizar, hablamos de llegar alto, muy alto.",
+      "El modelo que acompaña cada misión importante o la más atrevida.",
+      "Rocket Deluxe tan cómodo que querrás usarlo hasta para dormir pero no podrás.",
+      "Para los que siempre apuntan alto sin importar el desafío.",
+      "Porque la cuenta regresiva siempre termina en algo explosivo.",
+      "Listo para despegar y siempre aterrizando en el lugar correcto."
     ],
     color: "bg-card",
     icon: (
