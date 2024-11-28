@@ -7,7 +7,10 @@ export const StyleCard = ({ style, onClick }: { style: Style; onClick: () => voi
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const randomPhrase = style.phrases[Math.floor(Math.random() * style.phrases.length)];
+      // Sort phrases by length and get the shortest ones (top 3)
+      const shortestPhrases = [...style.phrases].sort((a, b) => a.length - b.length).slice(0, 3);
+      // Pick a random phrase from the shortest ones
+      const randomPhrase = shortestPhrases[Math.floor(Math.random() * shortestPhrases.length)];
       setCurrentDescription(randomPhrase);
     }, 3000); // Change every 3 seconds
 
