@@ -49,6 +49,12 @@ export const SelectedStyle = ({
             alt="Silhouette Noir" 
             className="w-48 h-48 object-contain mx-auto mb-6 rounded-2xl" 
           />
+        ) : style.id === "rocket-deluxe" ? (
+          <img 
+            src="/lovable-uploads/a16d095b-ba91-4fef-9a97-1bfaebc49712.png" 
+            alt="Rocket Deluxe" 
+            className="w-48 h-48 object-contain mx-auto mb-6 rounded-2xl" 
+          />
         ) : (
           <div className="mb-6">{style.icon}</div>
         )}
