@@ -40,7 +40,7 @@ export const SelectedStyle = ({
           <img 
             src="/lovable-uploads/95582cbf-a331-47cc-98bd-66e9c2b08c75.png" 
             alt="Largo Milano" 
-            className="w-32 h-32 object-contain mx-auto mb-6" 
+            className="w-48 h-48 object-contain mx-auto mb-6 rounded-2xl" 
           />
         ) : (
           <div className="mb-6">{style.icon}</div>
