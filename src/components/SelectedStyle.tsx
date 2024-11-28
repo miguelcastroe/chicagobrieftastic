@@ -37,6 +37,12 @@ export const SelectedStyle = ({
             alt="Largo Milano" 
             className="w-48 h-48 object-contain mx-auto mb-6 rounded-2xl" 
           />
+        ) : style.id === "grande-luxe" ? (
+          <img 
+            src="/lovable-uploads/f4b61d88-2516-4904-8f93-47353f0d990e.png" 
+            alt="Grande Luxe" 
+            className="w-48 h-48 object-contain mx-auto mb-6 rounded-2xl" 
+          />
         ) : (
           <div className="mb-6">{style.icon}</div>
         )}
