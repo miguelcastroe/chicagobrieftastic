@@ -51,7 +51,7 @@ const styles: Style[] = [
       "La discreción nunca se vio tan bien",
       "Para los que guardan los mejores secretos",
     ],
-    color: "bg-accent1",
+    color: "bg-card",
     icon: <div className="w-16 h-16 bg-text-white rounded-full animate-blob" />,
   },
   {
@@ -63,7 +63,7 @@ const styles: Style[] = [
       "Alcanza nuevas alturas con cada movimiento",
       "Para los que siempre apuntan alto",
     ],
-    color: "bg-accent2",
+    color: "bg-card",
     icon: (
       <div className="relative w-16 h-16">
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-8 h-12 bg-text-white transform rotate-45 animate-rocket" />
