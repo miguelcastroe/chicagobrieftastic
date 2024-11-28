@@ -36,7 +36,15 @@ export const SelectedStyle = ({
       transition={{ duration: 0.5 }}
     >
       <div className={`${style.color} p-8 rounded-2xl mb-8 text-white`}>
-        <div className="mb-6">{style.icon}</div>
+        {style.id === "largo-milano" ? (
+          <img 
+            src="/lovable-uploads/95582cbf-a331-47cc-98bd-66e9c2b08c75.png" 
+            alt="Largo Milano" 
+            className="w-32 h-32 object-contain mx-auto mb-6" 
+          />
+        ) : (
+          <div className="mb-6">{style.icon}</div>
+        )}
         <h2 className="text-3xl font-bold mb-4">{style.name}</h2>
         <p className="text-xl mb-6">{style.phrases[currentPhraseIndex]}</p>
         <div className="flex flex-wrap gap-4 justify-center">
