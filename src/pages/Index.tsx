@@ -129,15 +129,17 @@ const Index = () => {
               {styles.map((style, index) => (
                 <motion.div
                   key={style.id}
-                  className={`style-card ${style.color} text-white`}
+                  className={`style-card ${style.color} text-white h-64 flex flex-col justify-between`}
                   onClick={() => handleStyleSelect(style)}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                   <div className="style-icon mb-4">{style.icon}</div>
-                  <h3 className="text-2xl font-bold mb-2">{style.name}</h3>
-                  <p className="text-white/90">{style.description}</p>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-2">{style.name}</h3>
+                    <p className="text-white/90">{style.description}</p>
+                  </div>
                 </motion.div>
               ))}
             </div>
