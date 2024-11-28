@@ -1,3 +1,4 @@
+import React from "react";
 import { Style } from "../types/styles";
 
 export const styles: Style[] = [
@@ -18,7 +19,7 @@ export const styles: Style[] = [
       "Cuando lo que tienes merece espacio, Largo Milano lo tiene todo."
     ],
     color: "bg-card",
-    icon: <div className="mt-5 w-8 h-20 bg-text-white rounded-full animate-float transform rotate-90" />,
+    icon: <div className="mt-5 w-8 h-20 bg-text-white rounded-full animate-float transform rotate-90" />
   },
   {
     id: "grande-luxe",
@@ -42,7 +43,7 @@ export const styles: Style[] = [
         <div className="w-8 h-8 bg-text-white rounded-full animate-float" />
         <div className="w-8 h-8 bg-text-white rounded-full animate-float" />
       </div>
-    ),
+    )
   },
   {
     id: "silhouette-noir",
@@ -61,7 +62,7 @@ export const styles: Style[] = [
       "Porque lo que no se muestra siempre intriga más."
     ],
     color: "bg-card",
-    icon: <div className="mt-5 w-12 h-12 bg-text-white rounded-full animate-pulse-slow" />,
+    icon: <div className="mt-5 w-12 h-12 bg-text-white rounded-full animate-pulse-slow" />
   },
   {
     id: "rocket-deluxe",
@@ -82,8 +83,11 @@ export const styles: Style[] = [
     color: "bg-card",
     icon: (
       <div className="mt-5 relative w-16 h-16">
-        <div className="absolute bottom-0 left-[30%] -translate-x-1/2 w-0 h-0 border-l-[25px] border-r-[25px] border-b-[43.3px] border-text-white transform rotate-45 animate-rocket" style={{ clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)' }} />
+        <div 
+          className="absolute bottom-0 left-[30%] -translate-x-1/2 w-0 h-0 border-l-[25px] border-r-[25px] border-b-[43.3px] border-text-white transform rotate-45 animate-rocket" 
+          style={{ clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)' }} 
+        />
       </div>
-    ),
-  },
+    )
+  }
 ];
