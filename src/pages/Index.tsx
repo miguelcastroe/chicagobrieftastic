@@ -66,7 +66,7 @@ const styles: Style[] = [
     color: "bg-card",
     icon: (
       <div className="mt-5 relative w-16 h-16">
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-8 h-12 bg-text-white rounded-lg transform rotate-45 animate-rocket" />
+        <div className="absolute bottom-0 left-[40%] -translate-x-1/2 w-8 h-12 bg-text-white rounded-lg transform rotate-45 animate-rocket" />
       </div>
     ),
   },
