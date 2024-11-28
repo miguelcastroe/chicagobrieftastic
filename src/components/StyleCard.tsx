@@ -3,25 +3,28 @@ import { useState, useEffect } from "react";
 import { Style } from "../types/styles";
 
 export const StyleCard = ({ style, onClick }: { style: Style; onClick: () => void }) => {
-  const [currentDescription, setCurrentDescription] = useState(style.description);
+  // Get initial description from shortest phrases
+  const shortPhrases = [...style.phrases]
+    .sort((a, b) => a.length - b.length)
+    .filter(phrase => phrase.length < 60); // Filter phrases that are likely to fit in one line
+  
+  const [currentDescription, setCurrentDescription] = useState(shortPhrases[0] || style.description);
   const [changeCount, setChangeCount] = useState(0);
 
   useEffect(() => {
     if (changeCount >= 2) return; // Stop after two changes
 
     const interval = setInterval(() => {
-      // Sort phrases by length and get the shortest ones (top 3)
-      const shortestPhrases = [...style.phrases]
-        .sort((a, b) => a.length - b.length)
-        .slice(0, 3);
-      // Pick a random phrase from the shortest ones
-      const randomPhrase = shortestPhrases[Math.floor(Math.random() * shortestPhrases.length)];
-      setCurrentDescription(randomPhrase);
-      setChangeCount(prev => prev + 1);
+      // Get a random phrase from the filtered short phrases
+      const randomPhrase = shortPhrases[Math.floor(Math.random() * Math.min(shortPhrases.length, 3))];
+      if (randomPhrase) {
+        setCurrentDescription(randomPhrase);
+        setChangeCount(prev => prev + 1);
+      }
     }, 3000); // Change every 3 seconds
 
     return () => clearInterval(interval);
-  }, [style.phrases, changeCount]);
+  }, [shortPhrases, changeCount]);
 
   return (
     <motion.div
@@ -34,7 +37,7 @@ export const StyleCard = ({ style, onClick }: { style: Style; onClick: () => voi
       <div className="style-icon mb-4">{style.icon}</div>
       <div>
         <h3 className="text-2xl font-bold mb-2">{style.name}</h3>
-        <p className="text-white/90 text-sm">{currentDescription}</p>
+        <p className="text-white/90 text-sm truncate">{currentDescription}</p>
       </div>
     </motion.div>
   );
