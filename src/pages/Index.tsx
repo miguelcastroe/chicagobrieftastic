@@ -66,7 +66,7 @@ const styles: Style[] = [
     color: "bg-card",
     icon: (
       <div className="mt-5 relative w-16 h-16">
-        <div className="absolute bottom-0 left-[30%] -translate-x-1/2 w-0 h-0 border-l-[20px] border-r-[20px] border-b-[40px] border-text-white rounded-[16px] transform rotate-45 animate-rocket" style={{ clipPath: 'polygon(50% 0%, 0% 100%, 100% 100%)' }} />
+        <div className="absolute bottom-0 left-[30%] -translate-x-1/2 w-0 h-0 border-l-[20px] border-r-[20px] border-b-[40px] border-text-white rounded-[16px] transform rotate-45 animate-rocket" style={{ clipPath: 'polygon(50% 10%, 0% 100%, 100% 100%)' }} />
       </div>
     ),
   },
@@ -189,3 +189,4 @@ const Index = () => {
 };
 
 export default Index;
+
