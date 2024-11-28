@@ -14,10 +14,6 @@
   @apply relative overflow-hidden rounded-2xl p-6 transition-all duration-300 hover:shadow-lg cursor-pointer;
 }
 
-.style-card:hover .style-icon {
-  @apply scale-110;
-}
-
-.style-icon {
-  @apply transition-transform duration-300;
+.style-card:hover {
+  @apply transform scale-105;
 }
