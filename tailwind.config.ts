@@ -49,12 +49,18 @@ export default {
           "0%, 100%": { transform: "scale(1)", opacity: "1" },
           "50%": { transform: "scale(1.1)", opacity: "0.8" },
         },
+        shake: {
+          "0%, 100%": { transform: "translateY(-8px) rotate(0deg)" },
+          "25%": { transform: "translateY(-8px) rotate(-1deg)" },
+          "75%": { transform: "translateY(-8px) rotate(1deg)" },
+        },
       },
       animation: {
         "slide-up": "slide-up 0.5s ease-out",
         float: "float 3s ease-in-out infinite",
         rocket: "rocket 1s ease-in-out infinite alternate",
         "pulse-slow": "pulse-slow 2s ease-in-out infinite",
+        shake: "shake 0.5s ease-in-out infinite",
       },
     },
   },
