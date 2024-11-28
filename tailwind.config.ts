@@ -19,15 +19,12 @@ export default {
     },
     extend: {
       colors: {
-        // Main colors
         background: "#202020",  // Dark background
         card: "#0988f0",       // Blue for cards
-        // Text colors
         "text-dark": "#202020",
         "text-gray": "#9a9a9a",
         "text-light": "#e9e9e9",
         "text-white": "#ffffff",
-        // Accent colors
         accent1: "#ff573b",    // Orange-red
         accent2: "#ffb800",    // Yellow
       },
@@ -48,23 +45,16 @@ export default {
           "0%": { transform: "translateY(0)" },
           "100%": { transform: "translateY(-20px)" },
         },
-        blob: {
-          "0%": { borderRadius: "60% 40% 30% 70%/60% 30% 70% 40%" },
-          "50%": { borderRadius: "30% 60% 70% 40%/50% 60% 30% 60%" },
-          "100%": { borderRadius: "60% 40% 30% 70%/60% 30% 70% 40%" },
-        },
-        pentagon: {
-          "0%": { clipPath: 'polygon(50% 0%, 80% 40%, 65% 90%, 35% 90%, 20% 40%)' },
-          "50%": { clipPath: 'polygon(50% 0%, 85% 35%, 70% 95%, 30% 95%, 15% 35%)' },
-          "100%": { clipPath: 'polygon(50% 0%, 80% 40%, 65% 90%, 35% 90%, 20% 40%)' },
+        "pulse-slow": {
+          "0%, 100%": { transform: "scale(1)", opacity: "1" },
+          "50%": { transform: "scale(1.1)", opacity: "0.8" },
         },
       },
       animation: {
         "slide-up": "slide-up 0.5s ease-out",
         float: "float 3s ease-in-out infinite",
         rocket: "rocket 1s ease-in-out infinite alternate",
-        blob: "blob 8s ease-in-out infinite",
-        pentagon: "pentagon 8s ease-in-out infinite",
+        "pulse-slow": "pulse-slow 2s ease-in-out infinite",
       },
     },
   },

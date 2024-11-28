@@ -52,10 +52,7 @@ const styles: Style[] = [
       "Para los que guardan los mejores secretos",
     ],
     color: "bg-card",
-    icon: <div className="mt-5 w-12 h-12 bg-text-white animate-blob" style={{ 
-      clipPath: 'polygon(50% 0%, 80% 40%, 65% 90%, 35% 90%, 20% 40%)',
-      animation: 'pentagon 8s ease-in-out infinite'
-    }} />,
+    icon: <div className="mt-5 w-12 h-12 bg-text-white rounded-full animate-pulse-slow" />,
   },
   {
     id: "rocket-deluxe",
