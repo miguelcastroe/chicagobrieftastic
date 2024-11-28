@@ -4,18 +4,24 @@ import { Style } from "../types/styles";
 
 export const StyleCard = ({ style, onClick }: { style: Style; onClick: () => void }) => {
   const [currentDescription, setCurrentDescription] = useState(style.description);
+  const [changeCount, setChangeCount] = useState(0);
 
   useEffect(() => {
+    if (changeCount >= 2) return; // Stop after two changes
+
     const interval = setInterval(() => {
       // Sort phrases by length and get the shortest ones (top 3)
-      const shortestPhrases = [...style.phrases].sort((a, b) => a.length - b.length).slice(0, 3);
+      const shortestPhrases = [...style.phrases]
+        .sort((a, b) => a.length - b.length)
+        .slice(0, 3);
       // Pick a random phrase from the shortest ones
       const randomPhrase = shortestPhrases[Math.floor(Math.random() * shortestPhrases.length)];
       setCurrentDescription(randomPhrase);
+      setChangeCount(prev => prev + 1);
     }, 3000); // Change every 3 seconds
 
     return () => clearInterval(interval);
-  }, [style.phrases]);
+  }, [style.phrases, changeCount]);
 
   return (
     <motion.div
