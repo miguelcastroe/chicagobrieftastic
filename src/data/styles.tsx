@@ -19,7 +19,7 @@ export const styles: Style[] = [
       "Cuando lo que tienes merece espacio, Largo Milano lo tiene todo."
     ],
     color: "bg-card",
-    icon: <div className="mt-5 w-8 h-20 bg-text-white rounded-full animate-float transform rotate-90" />
+    icon: <img src="/lovable-uploads/95582cbf-a331-47cc-98bd-66e9c2b08c75.png" alt="Largo Milano" className="w-32 h-32 object-contain mx-auto" />
   },
   {
     id: "grande-luxe",
