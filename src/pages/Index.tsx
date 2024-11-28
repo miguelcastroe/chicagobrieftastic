@@ -165,7 +165,7 @@ const Index = () => {
                   <div className="style-icon mb-4">{style.icon}</div>
                   <div>
                     <h3 className="text-2xl font-bold mb-2">{style.name}</h3>
-                    <p className="text-white/90">{style.description}</p>
+                    <p className="text-white/90 text-sm">{style.description}</p>
                   </div>
                 </motion.div>
               ))}
