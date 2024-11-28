@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Style } from "../types/styles";
 
 export const StyleCard = ({ style, onClick }: { style: Style; onClick: () => void }) => {
@@ -8,23 +8,9 @@ export const StyleCard = ({ style, onClick }: { style: Style; onClick: () => voi
     .sort((a, b) => a.length - b.length)
     .filter(phrase => phrase.length < 60); // Filter phrases that are likely to fit in one line
   
-  const [currentDescription, setCurrentDescription] = useState(shortPhrases[0] || style.description);
-  const [changeCount, setChangeCount] = useState(0);
-
-  useEffect(() => {
-    if (changeCount >= 2) return; // Stop after two changes
-
-    const interval = setInterval(() => {
-      // Get a random phrase from the filtered short phrases
-      const randomPhrase = shortPhrases[Math.floor(Math.random() * Math.min(shortPhrases.length, 3))];
-      if (randomPhrase) {
-        setCurrentDescription(randomPhrase);
-        setChangeCount(prev => prev + 1);
-      }
-    }, 3000); // Change every 3 seconds
-
-    return () => clearInterval(interval);
-  }, [shortPhrases, changeCount]);
+  // Select a random short phrase on initial load
+  const initialDescription = shortPhrases[Math.floor(Math.random() * Math.min(shortPhrases.length, 3))] || style.description;
+  const [currentDescription] = useState(initialDescription);
 
   return (
     <motion.div
