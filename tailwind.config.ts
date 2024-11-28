@@ -53,12 +53,18 @@ export default {
           "50%": { borderRadius: "30% 60% 70% 40%/50% 60% 30% 60%" },
           "100%": { borderRadius: "60% 40% 30% 70%/60% 30% 70% 40%" },
         },
+        pentagon: {
+          "0%": { clipPath: 'polygon(50% 0%, 80% 40%, 65% 90%, 35% 90%, 20% 40%)' },
+          "50%": { clipPath: 'polygon(50% 0%, 85% 35%, 70% 95%, 30% 95%, 15% 35%)' },
+          "100%": { clipPath: 'polygon(50% 0%, 80% 40%, 65% 90%, 35% 90%, 20% 40%)' },
+        },
       },
       animation: {
         "slide-up": "slide-up 0.5s ease-out",
         float: "float 3s ease-in-out infinite",
         rocket: "rocket 1s ease-in-out infinite alternate",
         blob: "blob 8s ease-in-out infinite",
+        pentagon: "pentagon 8s ease-in-out infinite",
       },
     },
   },
