@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { FC } from "react";
 
 export type Style = {
   id: string;
@@ -6,5 +6,5 @@ export type Style = {
   description: string;
   phrases: string[];
   color: string;
-  icon: ReactNode;
+  icon: FC;
 };
