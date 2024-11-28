@@ -105,12 +105,12 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-background">
       <main className="container mx-auto px-4 py-12">
         {!selectedStyle ? (
           <>
             <motion.h1 
-              className="text-4xl md:text-5xl font-bold text-center mb-8"
+              className="text-4xl md:text-5xl font-bold text-center mb-8 text-text-light"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -118,7 +118,7 @@ const Index = () => {
               ¿Cuál es tu estilo?
             </motion.h1>
             <motion.p 
-              className="text-xl text-center text-gray-600 mb-12"
+              className="text-xl text-center text-text-gray mb-12"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
@@ -174,13 +174,13 @@ const Index = () => {
                 </button>
               </div>
             </div>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-text-gray">
               Ya sabes cuál es tu match perfecto. Ahora falta que tus amigas lo descubran.
             </p>
           </motion.div>
         )}
       </main>
-      <footer className="text-center py-6 text-gray-600 font-mono">
+      <footer className="text-center py-6 text-text-gray font-mono">
         Calzoncillos Chicago @ 2024
       </footer>
     </div>
