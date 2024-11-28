@@ -36,9 +36,9 @@ const styles: Style[] = [
     ],
     color: "bg-secondary",
     icon: (
-      <div className="flex gap-2 animate-float">
-        <div className="w-8 h-8 bg-secondary rounded-full" />
-        <div className="w-8 h-8 bg-secondary rounded-full" />
+      <div className="flex gap-2">
+        <div className="w-8 h-8 bg-secondary rounded-full animate-float" />
+        <div className="w-8 h-8 bg-secondary rounded-full animate-float" />
       </div>
     ),
   },
@@ -65,9 +65,9 @@ const styles: Style[] = [
     ],
     color: "bg-accent",
     icon: (
-      <div className="relative w-16 h-16 animate-rocket">
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-8 h-12 bg-accent transform rotate-45" />
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-4 bg-accent rounded-full" />
+      <div className="relative w-16 h-16">
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-8 h-12 bg-accent transform rotate-45 animate-rocket" />
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-4 bg-accent rounded-full animate-rocket" />
       </div>
     ),
   },
