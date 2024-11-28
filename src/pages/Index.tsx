@@ -51,8 +51,8 @@ const styles: Style[] = [
       "La discreción nunca se vio tan bien",
       "Para los que guardan los mejores secretos",
     ],
-    color: "bg-dark",
-    icon: <div className="w-16 h-16 bg-dark rounded-full animate-blob" />,
+    color: "bg-accent1",
+    icon: <div className="w-16 h-16 bg-accent1 rounded-full animate-blob" />,
   },
   {
     id: "rocket-deluxe",
@@ -63,11 +63,11 @@ const styles: Style[] = [
       "Alcanza nuevas alturas con cada movimiento",
       "Para los que siempre apuntan alto",
     ],
-    color: "bg-accent",
+    color: "bg-accent2",
     icon: (
       <div className="relative w-16 h-16">
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-8 h-12 bg-accent transform rotate-45 animate-rocket" />
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-4 bg-accent rounded-full animate-rocket" />
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-8 h-12 bg-accent2 transform rotate-45 animate-rocket" />
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-4 h-4 bg-accent2 rounded-full animate-rocket" />
       </div>
     ),
   },

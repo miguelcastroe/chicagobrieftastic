@@ -19,11 +19,12 @@ export default {
     },
     extend: {
       colors: {
-        primary: "#0988f0",
-        secondary: "#ff573b",
-        accent: "#ffb800",
-        dark: "#202020",
-        light: "#bbbbbb",
+        // Main colors
+        primary: "#0988f0",    // Blue
+        secondary: "#202020",  // Dark Gray
+        // Accent colors
+        accent1: "#ff573b",    // Orange-red
+        accent2: "#ffb800",    // Yellow
       },
       fontFamily: {
         sans: ["IBM Plex Sans", "sans-serif"],
